@@ -1,0 +1,58 @@
+
+  /* Exemple de styles Material Design pour votre header */
+.header {
+  background-color: #2196F3; /* Couleur bleue de Material Design */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header .actions {
+  display: flex;
+}
+
+.header .actions button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.header .actions button:hover {
+  opacity: 0.8;
+}
+
+
+
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #2196F3; Couleur bleue de Material Design */
+  color: white;
+  /* padding: 10px 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+  height: 60px;
+}
+
+.content {
+  margin-top: 60px; /* Ajustez selon la hauteur de votre header */
+  padding: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

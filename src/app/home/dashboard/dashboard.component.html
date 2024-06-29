@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngIf="isAdmin()">
+        <div class="card">
+          <div class="card-header">
+            Dash Admin
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">Manage Users</li>
+              <li class="list-group-item">Manage Products</li>
+              <!-- Add more menu items for admin -->
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4" *ngIf="isManager()">
+        <div class="card">
+          <div class="card-header">
+            Dash élève
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">View Reports</li>
+              <li class="list-group-item">Manage Teams</li>
+              <!-- Add more menu items for manager -->
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4" *ngIf="isUser()">
+        <div class="card">
+          <div class="card-header">
+            Dash étudiant
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">View Profile</li>
+              <li class="list-group-item">View Orders</li>
+              <!-- Add more menu items for regular user -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
